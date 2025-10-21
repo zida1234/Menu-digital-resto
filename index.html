@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoran MYZIII</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+   <nav class="navbar">
+  <h1>Menu Digital Restoran</h1>
+  <ul class="nav-links">
+    <li><a href="#home">Beranda</a></li>
+    <li><a href="#menu">Menu</a></li>
+    <li><a href="#pesan">Pesan</a></li>
+    <li><a href="#contact">Kontak</a></li>
+  </ul>
+</nav>
+
+
+  <!-- HERO SECTION -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h2>Selamat Datang di Restoran Myziii</h2>
+      <p>Nikmati kelezatan cita rasa khas Indonesia dalam setiap gigitan.</p>
+      <div class="hero-btns">
+        <a href="#menu" class="btn-primary">Lihat Menu</a>
+        <button id="wa-btn">Pesan via WhatsApp</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MENU MAKANAN ===================== -->
+<section id="menu" class="menu-section">
+  <h2>🍛 Makanan</h2>
+  <div class="menu-container">
+
+    <div class="menu-item">
+      <img src="images/nasi-goreng.jpg" alt="Nasi Goreng">
+      <h3>Nasi Goreng Spesial</h3>
+      <p>Nasi goreng dengan telur, ayam, dan kerupuk.</p>
+      <span class="price">Rp25.000</span>
+      <button onclick="pesan('Nasi Goreng Spesial')">Pesan</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/sate-ayam.jpg" alt="Sate Ayam">
+      <h3>Sate Ayam</h3>
+      <p>Sate ayam bumbu kacang khas Indonesia.</p>
+      <span class="price">Rp30.000</span>
+      <button onclick="pesan('Sate Ayam')">Pesan</button>
+    </div>
+
+     <div class="menu-item">
+      <img src="images/mie-goreng.jpg" alt="Sate Ayam">
+      <h3>Mie Goreng Jawa</h3>
+      <p>Mie goreng pedas gurih khas Jawa.</p>
+      <span class="price">Rp20.000</span>
+      <button onclick="pesan('Mie Goreng Jawa')">Pesan</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== MENU MINUMAN ===================== -->
+<section class="menu-section">
+  <h2>🥤 Minuman</h2>
+  <div class="menu-container">
+
+    <div class="menu-item">
+      <img src="images/es-teh.jpg" alt="Es Teh">
+      <h3>Es Teh Manis</h3>
+      <p>Teh manis dingin yang menyegarkan.</p>
+      <span class="price">Rp8.000</span>
+      <button onclick="pesan('Es Teh Manis')">Pesan</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/jus-alpukat.jpg" alt="Jus Alpukat">
+      <h3>Jus Alpukat</h3>
+      <p>Jus alpukat segar dengan susu cokelat.</p>
+      <span class="price">Rp15.000</span>
+      <button onclick="pesan('Jus Alpukat')">Pesan</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/kopi.jpg" alt="Jus Alpukat">
+      <h3>Kopi</h3>
+      <p>Kopi dari biji kopi pilihan.</p>
+      <span class="price">Rp10.000</span>
+      <button onclick="pesan('Kopi')">Pesan</button>
+    </div>
+
+  </div>
+</section>
+
+<!-- ===================== MENU DESSERT ===================== -->
+<section class="menu-section">
+  <h2>🍮 Dessert</h2>
+  <div class="menu-container">
+
+    <div class="menu-item">
+      <img src="images/puding.jpg" alt="Puding Cokelat">
+      <h3>Puding Cokelat</h3>
+      <p>Puding lembut dengan saus cokelat manis.</p>
+      <span class="price">Rp12.000</span>
+      <button onclick="pesan('Puding Cokelat')">Pesan</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/Cake-Chocolate.jpg" alt="Puding Cokelat">
+      <h3>Cake Chocolate</h3>
+      <p>Cake lembut dengan cokelat manis.</p>
+      <span class="price">Rp10.000</span>
+      <button onclick="pesan('Cake Chocolate')">Pesan</button>
+    </div>
+
+    <div class="menu-item">
+      <img src="images/Cookies-Ice-Cream.jpg" alt="Puding Cokelat">
+      <h3>Cookies Ice Cream</h3>
+      <p>Ice Cream rasa vanila dan ada toping Cookies.</p>
+      <span class="price">Rp15.000</span>
+      <button onclick="pesan('Cookies Ice Cream')">Pesan</button>
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- FORM PESAN -->
+  <section id="pesan" class="form-section">
+    <h2>Form Pemesanan</h2>
+    <form id="orderForm">
+      <input type="text" id="nama" placeholder="Nama Anda" required>
+      <input type="text" id="menuPesanan" placeholder="Menu yang dipesan" required>
+      <textarea id="catatan" placeholder="Catatan tambahan (opsional)"></textarea>
+      <button type="submit">Kirim ke WhatsApp</button>
+    </form>
+  </section>
+
+  <!-- KONTAK -->
+  <section id="contact" class="contact-section">
+    <h2>Hubungi Kami</h2>
+    <p>📍 Jl. Merdeka No. 45, Pati</p>
+    <p>📞 0882-3712-3959</p>
+    <p>📧 restoranmyziii@gmail.com</p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>© 2025 Restoran Myziii | Cita rasa Nusantara, dari hati ❤️</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
